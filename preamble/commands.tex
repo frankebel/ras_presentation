@@ -1,0 +1,24 @@
+%! TeX root = ../main.tex
+
+% bra-ket
+\DeclarePairedDelimiter\bra{\langle}{\rvert}%
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}%
+\DeclarePairedDelimiter\expval{\langle}{\rangle}%
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1\delimsize\vert\mathopen{}#2}%
+\DeclarePairedDelimiterX\sandwich[3]{\langle}{\rangle}{#1\delimsize\vert\mathopen{}#2\delimsize\vert\mathopen{}#3}%
+\DeclarePairedDelimiterX\ketbra[2]{\lvert}{\rvert}{#1\delimsize\rangle\!\delimsize\langle#2}%
+\DeclarePairedDelimiterXPP\dangle[3]{}\lAngle\rAngle{_{#3}}{#1,\mathopen{}#2}%
+
+% mathematical constants
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\mi}{\mathrm{i}}
+
+% operators
+\newcommand{\md}{\mathrm{d}}
+\DeclareMathOperator{\res}{Res}
+
+% phantom for typesetting
+\newcommand{\pdag}{\vphantom{\dag}}
+\newcommand{\pk}{\vphantom{k}}
+\newcommand{\ps}{\vphantom{*}}
+
