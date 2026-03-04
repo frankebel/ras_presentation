@@ -1,5 +1,10 @@
 %! TeX root = ../main.tex
 
+% math
+% unicode-math waits until document setup
+\AtBeginDocument{\renewcommand\Re{\mathrm{Re}\>}}
+\AtBeginDocument{\renewcommand\Im{\mathrm{Im}\>}}
+
 % bra-ket
 \DeclarePairedDelimiter\bra{\langle}{\rvert}%
 \DeclarePairedDelimiter\ket{\lvert}{\rangle}%
