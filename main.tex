@@ -10,7 +10,7 @@
     \begin{columns}
         \column{0.3\textwidth}
         Student ID\@: 01429282 \\
-        Programme Code: UE 796 700 461
+        Study program: UE 796 700 461
     \end{columns}
 }
 \date{} % no date
@@ -26,9 +26,9 @@
 
 \begin{frame}{Motivation}
     In exercise used finite broadening $\delta$:
-    \begin{align}
-        G_{0}(k, \omega+\mi\delta) & = \frac{1}{\omega + \mi\delta - \epsilon_k} \\
-    \end{align}
+    \begin{equation}
+        G_{0}(k, \omega+\mi\delta) = \frac{1}{\omega + \mi\delta - \epsilon_k}
+    \end{equation}
     Can we do $\lim_{\delta\to0^+}$? \\
     Yes, in the resolvent formalism:
     \begin{equation}
@@ -43,9 +43,9 @@
     \end{equation}
     Write as a resolvent:
     \begin{align}
-        H_e       & = \diag(\alpha_1, \alpha_2, \cdots)       \\
-        \ket{v}   & = (b_1, b_2, \cdots)^\top                 \\
-        G(\omega) & = \sandwich{v}{\frac{1}{\omega - H_e}}{v}
+        H_\mathrm{e} & = \diag(\alpha_1, \alpha_2, \cdots)                \\
+        \ket{v}      & = (\beta_1, \beta_2, \cdots)^\top                  \\
+        G(\omega)    & = \sandwich{v}{\frac{1}{\omega - H_\mathrm{e}}}{v}
     \end{align}
 \end{frame}
 
@@ -84,7 +84,7 @@
     \end{align}
 \end{frame}
 
-\begin{frame}{Used packages}
+\begin{frame}{Technologies}
     \begin{itemize}
         \item Julia~\notefullcite{Bezanson2017}
         \item \texttt{RAS\_DMFT.jl}~\notefullcite{Ebel2026}
@@ -117,7 +117,7 @@
 \end{frame}
 
 \begin{frame}{Interacting Green's function (2)}
-    $n_k = 1000$ (IBZ), logarithmic grid with 1001 poles ($\Lambda = 1.05$)
+    $n_k = 1000$ (IBZ), logarithmic grid with 1001 poles ($\frac{\alpha_i}{\alpha_{i+1}} = \Lambda = 1.05$)
 
     \begin{centering}
         \input{graphics/logarithmic.tex}
